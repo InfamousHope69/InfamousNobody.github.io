@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <header>
+        <div class="header-flex-container">
+          <div class="flex-box flex-item1">
+            <span>
+                <h1 style="color: #EAE0C8;">Calculator</h2>
+            </span>
+          </div>
+          <div class ="btn-container">
+            <button id="darkModeBtn" onclick="toggleDarkMode()">
+              Dark Mode
+            </button>
+          </div>
+        </div>
+      </header>
+      <main id="main" class="light-mode">
+        <div class="calculator-panel">
+            <label for="num1">Enter 1st Number</label>
+            <input class="inputField" id="num1" type="number" placeholder="Enter a Number">
+            <label for="num2">Enter 2nd Number</label>
+            <input class="inputField" type="number" id="num2" placeholder="Enter a Number"><br>
+            <div class="oppBtns">
+              <button class="opp" onclick="add()">+</button>
+              <button class="opp" onclick="subtract()">-</button>
+              <button class="opp" onclick="multiply()">x</button>
+              <button class="opp" onclick="divide()">/</button>
+              <button class="opp" onclick="clearScreen()">C</button>
+            </div>
+            <label for="outputArea">Output</label>
+            <textarea name="Output" id="outputArea" cols="40" rows="2" readonly style="color: blueviolet; font-size:15px; resize:none;">
+            </textarea>
+        </div>
+        <script src="script.js"></script>
+      </main>
+</body>
+</html>
